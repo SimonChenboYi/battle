@@ -5,3 +5,8 @@ def sign_in_and_play
 
   click_button "Let's Play"
 end
+
+def attack_and_finish_attack
+  click_link "Attack"
+  click_link "Finish Attack"
+end

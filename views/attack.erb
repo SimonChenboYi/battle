@@ -1,3 +1,4 @@
 
-<h1> <%= @player1.name %> is attacking <%= @player2.name %>!</h1>
-<a href="/play">Finish Attack</a>
+<h1> <%= @game.attack_player.name %> is attacking <%= @game.attacked_player.name %>!</h1>
+<% $game.switch_player %>
+<a href="/play">Finish Attack & Switch the Player</a>
