@@ -1,7 +1,6 @@
 require 'player'
 
 describe Player do
-let(:name1) {Player.new('name1')}
 let(:name2) {Player.new('name2')}
 
 
@@ -17,9 +16,9 @@ let(:name2) {Player.new('name2')}
     end
   end
 
-  describe '#attack' do
+  describe '#attacked' do
     it "reduce player's hit-points by 10" do
-      expect { name1.attack(name2) }.to change { name2.hp }.by(-10)
+      expect { name2.attacked }.to change { name2.hp }.by(-10)
     end
   end
 
